@@ -8,7 +8,7 @@ var express = require('express'),
   
 // mongoose instance connection url connection
 mongoose.Promise = global.Promise;
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/my_heroku_node1'); 
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost/my_heroku_node1'); 
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -25,6 +25,6 @@ app.use(function(req, res) {
 const port = process.env.PORT || 3000;
 app.listen(port);
 
-module.exports = app;
+
 console.log('todo list RESTful API server started on: ' + port);
 
