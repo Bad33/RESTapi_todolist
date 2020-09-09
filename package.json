@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Bad33/RESTapi_todolist.git"
+    "url": "git+https://github.com/Bad33/RESTapi_todolist"
   },
   "keywords": [
     "RESTful"
@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "express": "^4.17.1",
+    "foobar": "1.1.0",
     "mongoose": "^5.10.3"
   }
 }
