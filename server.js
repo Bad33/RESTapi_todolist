@@ -25,6 +25,6 @@ app.use(function(req, res) {
 const port = process.env.PORT || 3000;
 app.listen(port);
 
-module.exports = my_heroku_node1;
+module.exports = app;
 console.log('todo list RESTful API server started on: ' + port);
 
